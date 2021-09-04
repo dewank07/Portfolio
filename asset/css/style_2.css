@@ -1,0 +1,280 @@
+/* second page */
+
+.firstpage {
+  height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+}
+
+.image img {
+  width: 30%;
+  position: relative;
+  float: right;
+  right: 10px;
+  top: 10px;
+  opacity: 0.6;
+}
+
+.hintro {
+  position: relative;
+  top: 40%;
+  /* width: 30%; */
+  left: 120px;
+}
+.wordCarousel {
+  font-size: 36px;
+  font-weight: 100;
+  color: #757571;
+
+  margin: 10px;
+}
+
+.wordCarousel .flip {
+  overflow: hidden;
+  height: 65px;
+  padding-top: 10px;
+  margin-top: -10px;
+  position: relative;
+  top: -44px;
+  left: 10px;
+}
+.flip3 li {
+  color: #ccc;
+  font-weight: 700;
+  padding: 0 40px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+}
+
+.flip3 {
+  animation: flip3 4s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+.gtstart1 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  background-color: rgba(216, 204, 204, 0.486);
+  border: none;
+  border-radius: 60px;
+  padding: 4px 32px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition: 0.6s;
+  position: relative;
+  top: -50px;
+}
+.gtstart1:hover {
+  opacity: 1;
+  background-color: #94f3e4;
+}
+.gtstart1 a {
+  color: #fff;
+}
+.gtstart1 a:hover {
+  color: #060a0a;
+}
+
+/*  project*/
+.grid-container {
+  display: grid;
+
+  grid-template-columns: 400px 400px;
+}
+.grid {
+  height: 90px;
+}
+
+.grid-container .grid {
+  text-align: center;
+  background: #060a0a;
+  padding: 50px 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.grid-container .grid .grid-item {
+  margin: 0 auto;
+
+  width: 64px;
+  height: 64px;
+  background: #94f3e4;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 30px;
+  left: 0;
+  transform-style: preserve-3d;
+}
+
+.grid-item h4 {
+  font-size: 22px;
+}
+
+.grid-container .grid .grid-item::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.grid-container .grid h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.grid-container .grid h4 a {
+  color: rgb(17, 10, 10);
+}
+.grid-container .grid p {
+  /* line-height: 24px; */
+  font-size: 18px;
+  margin-bottom: 0;
+  position: relative;
+  top: -10px;
+  width: 400px;
+  float: right;
+  left: 160px;
+}
+.grid-container .grid:hover {
+  background: #94f3e4;
+  border-color: #94f3e4;
+}
+.grid-container .grid:hover .grid-item {
+  background: rgb(20, 20, 20);
+}
+.grid-container .grid:hover .grid-item::before {
+  background: #94f3e4;
+}
+.grid-container .grid:hover p {
+  color: black;
+}
+.grid-container .grid:hover h4 a {
+  color: #fff;
+}
+
+/* responsive */
+@media (max-width: 575px) {
+  nav .nav-links ul {
+    position: relative;
+    right: 25px;
+  }
+  .bg img {
+    left: -600px !important;
+  }
+  .earth img {
+    left: -20vw;
+  }
+  .mid {
+    left: 20px !important;
+    top: 50px !important;
+  }
+  .fore {
+    left: 150px !important;
+    top: 50px !important;
+  }
+  .mid h2,
+  .fore h2 {
+    font-size: 2em;
+  }
+  .firstpage {
+    background-image: url(../images/bg\ -\ Copy.jpg);
+  }
+  .image img {
+    float: left;
+    left: 100px;
+    width: 50%;
+    top: 150px;
+    opacity: 1;
+  }
+  .hintro {
+    top: 20%;
+    float: left;
+    left: 15px;
+  }
+  .wordCarousel .flip {
+    top: -38px;
+  }
+  .flip3 li {
+    font-size: 25px;
+  }
+  .gtstart1 {
+    float: right;
+    right: 80px;
+    top: -30px;
+  }
+  #abtme_i {
+    top: 50px;
+    width: 50%;
+  }
+  .slide-detail p {
+    font-size: 18px;
+  }
+  .slide-detail {
+    top: 175px;
+    width: 70%;
+    left: 50px;
+  }
+  .fa {
+    font-size: 14px;
+  }
+  .skname {
+    font-size: 18px;
+  }
+  #ski {
+    left: 30%;
+  }
+  .grid-container {
+    grid-template-columns: 150px 150px;
+    position: relative;
+    float: left;
+    top: -50px;
+    left: -100px !important;
+  }
+  .grid-container .grid p {
+    font-size: 14px;
+    left: 85px;
+    width: 250px;
+  }
+  .planet-links {
+    left: -20px;
+  }
+}
